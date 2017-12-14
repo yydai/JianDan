@@ -1,0 +1,26 @@
+* 煎蛋网妹子图爬虫
+
+** 简介
+
+** 使用说明
+    python3 环境下测试通过，python2 可能会有问题。
+
+    首先 clone 项目代码，然后在根目录执行下面的命令，安装相应的依赖。建议使用 virtualenv。
+    #+BEGIN_SRC shell
+    pip install -r requirements.txt
+    #+END_SRC
+
+    然后，改下 photo_jiandan 目录下的 settings.py 中的图片存放位置。例如我的：
+    #+BEGIN_SRC shell
+    IMAGES_STORE = '/Users/yingdai/workspace/images/'
+    #+END_SRC
+
+    另外，由于项目中用到了 splash，所以需要启动它的服务，可以参考这里：
+    https://github.com/scrapy-plugins/scrapy-splash
+
+    简单来说就是需要 docker 环境，然后执行：
+    #+BEGIN_SRC shell
+    docker run -p 8050:8050 scrapinghub/splash
+    #+END_SRC
+
+    如果不是在本地执行，需要在 settings.py 中设置 SPLASH_URL。
