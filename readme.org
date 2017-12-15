@@ -24,3 +24,8 @@
     #+END_SRC
 
     如果不是在本地执行，需要在 settings.py 中设置 SPLASH_URL。
+
+    最后，进入到项目目录，执行下面的命令即可：
+    #+BEGIN_SRC shell
+    scrapy craw jiandan
+    #+END_SRC
