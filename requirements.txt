@@ -23,7 +23,7 @@ pyOpenSSL==17.5.0
 queuelib==1.4.2
 requests==2.18.4
 Scrapy==1.4.0
-scrapy-splash==0.7.2
+scrapy-splash==0.8.0
 service-identity==17.0.0
 six==1.11.0
 Twisted==19.7.0
